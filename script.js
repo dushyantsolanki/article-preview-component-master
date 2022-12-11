@@ -16,4 +16,10 @@ b.addEventListener("click", (e) => {
     .insertAdjacentHTML("afterend", insertHtml);
 });
 
+let c = document.body.getElementsByClassName("box")[0]
+
+c.addEventListener("click",(e)=>{
+  e.location
+})
+
 
