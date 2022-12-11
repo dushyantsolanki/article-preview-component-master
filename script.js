@@ -1,4 +1,4 @@
-var insertHtml = `<div class="box">
+var insertHtml = `<div class="box" onclick="location.reload()">
 
 <div class="share-text">SHARE</div>
 
@@ -16,10 +16,8 @@ b.addEventListener("click", (e) => {
     .insertAdjacentHTML("afterend", insertHtml);
 });
 
-let c = document.body.getElementsByClassName("box")[0]
+let c = document.body.getElementsByClassName("box")[0];
 
-c.addEventListener("click",(e)=>{
- location.reload()
-})
-
-
+c.addEventListener("click", (e) => {
+  location.reload();
+});
